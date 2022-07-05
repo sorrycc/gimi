@@ -1,4 +1,4 @@
-const yParser = require('yargs-parser');
+import { yParser } from '@umijs/utils';
 
 const args = yParser(process.argv);
 
@@ -14,4 +14,3 @@ switch (args._[0]) {
     console.log('Unknown command');
     break;
 }
-

@@ -1,4 +1,4 @@
-const kleur = require('kleur');
+import kleur from 'kleur';
 
 const prefixes = {
   wait: kleur.cyan('wait') + '  -',
@@ -10,32 +10,32 @@ const prefixes = {
   debug: kleur.gray('debug') + ' -',
 };
 
-exports.wait = (...message) => {
+export const wait = (...message: string[]) => {
   console.log(prefixes.wait, ...message);
-}
+};
 
-exports.error = (...message) => {
+export const error = (...message: string[]) => {
   console.error(prefixes.error, ...message);
-}
+};
 
-exports.warn = (...message) => {
+export const warn = (...message: string[]) => {
   console.warn(prefixes.warn, ...message.map((s) => kleur.yellow(s)));
-}
+};
 
-exports.ready = (...message) => {
+export const ready = (...message: string[]) => {
   console.log(prefixes.ready, ...message);
-}
+};
 
-exports.info = (...message) => {
+export const info = (...message: string[]) => {
   console.log(prefixes.info, ...message);
-}
+};
 
-exports.event = (...message) => {
+export const event = (...message: string[]) => {
   console.log(prefixes.event, ...message);
-}
+};
 
-exports.debug = (...message) => {
+export const debug = (...message: string[]) => {
   if (process.env.DEBUG) {
     console.log(prefixes.debug, ...message);
   }
-}
+};
