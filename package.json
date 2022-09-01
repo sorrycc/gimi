@@ -1,16 +1,16 @@
 {
-  "name": "grandpa",
+  "name": "gimi",
   "version": "0.0.1-alpha.1",
   "description": "",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sorrycc/grandpa"
+    "url": "https://github.com/sorrycc/gimi"
   },
   "license": "MIT",
   "main": "index.js",
   "bin": {
-    "grandpa": "bin/grandpa"
+    "gimi": "bin/gimi.js"
   },
   "files": [
     "bin",

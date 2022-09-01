@@ -1,4 +1,4 @@
-# grandpa
+# gimi
 
 原子化脚手架工具。
 
@@ -6,16 +6,16 @@
 
 ```bash
 # package.json, .editorconfig
-$ grandpa init
+$ gimi init
 # tsconfig.json, build & dev script
-$ grandpa g typescript
+$ gimi g typescript
 # .prettierrc, prettier and plugins
-$ grandpa g prettier
+$ gimi g prettier
 # esno + zx
-$ grandpa g script
+$ gimi g script
 # husky + lint-staged
-$ grandpa g husky
-$ grandpa g jest
-$ grandpa g github-ci
-$ grandpa g changelog
+$ gimi g husky
+$ gimi g jest
+$ gimi g github-ci
+$ gimi g changelog
 ```
