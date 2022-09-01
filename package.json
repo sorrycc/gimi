@@ -23,13 +23,15 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@umijs/utils": "^4.0.5",
     "kleur": "^4.1.4",
-    "tiny-invariant": "^1.2.0"
+    "tiny-invariant": "^1.2.0",
+    "yargs-parser": "^21.1.1",
+    "zx": "^7.0.8"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
-    "father": "4.0.0-rc.2",
+    "@types/yargs-parser": "^21.0.0",
+    "father": "^4.0.0",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",
