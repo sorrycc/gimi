@@ -28,6 +28,7 @@ export class GeneratorApi {
 
   async remove(filePath: string) {
     const absFilePath = join(this.cwd, filePath);
+    assert(existsSync(absFilePath), `File ${filePath} not found`);
     if (existsSync(absFilePath)) {
       rmSync(absFilePath);
     }
