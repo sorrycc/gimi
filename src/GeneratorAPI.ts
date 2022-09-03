@@ -2,7 +2,7 @@ import assert from 'assert';
 import { existsSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import type { $ } from 'zx';
-
+import {getPackageManager } from 'obtain-package-manager'
 // TODO: add logger for each API
 export class GeneratorApi {
   public cwd: string;
@@ -98,8 +98,9 @@ export class GeneratorApi {
 
   async install() {
     // TODO: 检测 npm client
+    const pkgManager = await getPackageManager();
     const { $ } = await import('zx');
-    await $`pnpm i`;
+    await $`${pkgManager} i`;
   }
 
   private getPkg() {
